@@ -1,2 +1,2 @@
 # Movie-Search
-An early prototype at a movie search engine based on genre, year, and rating. 
+An early prototype at a movie search engine based on genre, year, and rating. It's still could use a lot more so any ideas, feel free to let me know. The front end aestetic is a work in progress, but the page is responsive as well as the navbar. Also, the 'reel' file was an attempt at creating a 2d projector animation, but it didn't come out quite right so feel free to ignore that. 
