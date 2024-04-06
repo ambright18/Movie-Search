@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+  color: #fff;
+  overflow: hidden;
+}
+.form-control {
+    background-color: #444;
+    color: #fff;
+    border-color: #ffcc00; /* gold */
+  }
+  
+  .form-control:focus {
+    background-color: #555;
+    border-color: #ffcc00; /* gold */
+    color: #fff;
+  }
+  
+  .btn-primary {
+    background-color: #ff4444; /* red */
+    border-color: #ff4444; /* red */
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff5555; /* lighter red */
+    border-color: #ff5555; /* lighter red */
+  }
+  
+  #results {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+
+/*navbar section*/
+
+/* styles.css */
+.navbar {
+  background-color: #333;
+  position: relative;
+  height: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.navbar-icon {
+  max-width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.brand-text {
+  margin-left: 10px;
+  font-size: 2.1rem;
+  color:#ffcc00;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  max-height: 0;
+  transition: max-height 0.3s;
+}
+
+.navbar-menu li, ul, a{
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-icon {
+    max-width: 50px;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+
+  .navbar-menu li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .navbar-menu li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar-menu.show {
+    max-height: 100vh;
+    display: block;
+  }
+}

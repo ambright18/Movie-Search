@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-movies {
+    text-align: center;
+}
+
+.movie {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.movie img {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.movie h3 {
+    margin: 10px 0;
+}
+
+/*Moving projector animation*/
+.welcome-banner {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.projector-container {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: projectorAnimation 4s infinite alternate;
+}
+
+.projector {
+    width: 150px;
+    height: auto;
+}
+
+@keyframes projectorAnimation {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    100% { transform: translateX(-50%) rotate(15deg); }
+}
+
+.welcome-text h2 {
+    margin-top: 20px;
+}
+
+.welcome-text p {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Projector</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .projector {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: black;
+      overflow: hidden;
+    }
+    .lens {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      width: 40px;
+      height: 40px;
+      background-color: #ccc;
+      border-radius: 50%;
+      animation: flicker 0.5s infinite alternate;
+    }
+    @keyframes flicker {
+      0% {opacity: 0.5;}
+      100% {opacity: 1;}
+    }
+    .film-reel {
+      position: absolute;
+      top: 50%;
+      right: -80px;
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      border: 2px solid #666;
+      border-radius: 50%;
+      animation: rotateFilmReel 5s linear infinite;
+    }
+    @keyframes rotateFilmReel {
+      100% {transform: rotate(360deg);}
+    }
+    .film-strip {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 280px;
+      height: 180px;
+      background: linear-gradient(to right, #000 10%, transparent 10%, transparent 20%, #000 20%, #000 30%, transparent 30%, transparent 40%, #000 40%, #000 50%, transparent 50%, transparent 60%, #000 60%, #000 70%, transparent 70%, transparent 80%, #000 80%, #000 90%, transparent 90%, transparent 100%);
+      background-size: 14px 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="projector">
+        <div class="lens"></div>
+        <div class="film-reel"></div>
+        <div class="film-strip"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
